@@ -24,6 +24,17 @@
     __weak IBOutlet UIImageView *missedOrMatchedImage;
     __weak IBOutlet UIImage *missedImage;
     __weak IBOutlet UIImage *matchedImage;
+    __weak IBOutlet UIImage *matchImageTag1;
+    __weak IBOutlet UIImage *matchImageTag2;
+    __weak IBOutlet UIImage *matchImageTag3;
+    __weak IBOutlet UIImage *matchImageTag4;
+    __weak IBOutlet UIImage *matchImageTag5;
+    __weak IBOutlet UIImage *matchImageTag6;
+    __weak IBOutlet UIImage *matchImageTag7;
+    __weak IBOutlet UIImage *matchImageTag8;
+    __weak IBOutlet UIImage *turnedDownImage;
+
+    
     
 }
 - (IBAction)resetGame:(id)sender;
@@ -46,6 +57,16 @@
             [missedOrMatchedImage setImage:nil];
             missedImage = [UIImage imageNamed:@"missed.png"];
             matchedImage = [UIImage imageNamed:@"matched.png"];
+            matchImageTag1 = [UIImage imageNamed:@"matchImageTag1.png"];
+            matchImageTag2 = [UIImage imageNamed:@"matchImageTag2.png"];
+            matchImageTag3 = [UIImage imageNamed:@"matchImageTag3.png"];
+            matchImageTag4 = [UIImage imageNamed:@"matchImageTag4.png"];
+            matchImageTag5 = [UIImage imageNamed:@"matchImageTag5.png"];
+            matchImageTag6 = [UIImage imageNamed:@"matchImageTag6.png"];
+            matchImageTag7 = [UIImage imageNamed:@"matchImageTag7.png"];
+            matchImageTag8 = [UIImage imageNamed:@"matchImageTag8.png"];
+            turnedDownImage = [UIImage imageNamed:@"turnedDownImage.png"];
+            
             
         }
         
@@ -104,14 +125,16 @@
         matchedMissedCountLabel.text=@"Missed!";
         NSLog(@"You Lose!");
         isItAWin = NO;
+        firstCard.backgroundColor = [UIColor whiteColor];
         [missedOrMatchedImage setImage:missedImage];
         missedOrMatchedImage.backgroundColor = [UIColor lightGrayColor];
+        lastCard.backgroundColor = [UIColor whiteColor];
     }
     
     if (timesWon == 8)
     {
         for (MyView *subview in self.view.subviews)
-            subview.backgroundColor = [UIColor brownColor];
+            subview.backgroundColor = [UIColor whiteColor];
         matchedMissedCountLabel.backgroundColor = [UIColor lightGrayColor];
         missedOrMatchedImage.backgroundColor = [UIColor lightGrayColor];
         timesWon=0;
@@ -123,12 +146,12 @@
 
 - (IBAction)resetGame:(id)sender {
     for (MyView *subview in self.view.subviews)
-        subview.backgroundColor = [UIColor brownColor];
+        subview.backgroundColor = [UIColor whiteColor];
     matchedMissedCountLabel.backgroundColor = [UIColor lightGrayColor];
     resetGameButton.backgroundColor=[UIColor lightGrayColor];
     timesWon=0;
     matchedMissedCountLabel.text=@"Matching Game";
-    [missedOrMatchedImage setImage:matchedImage];
+    [missedOrMatchedImage setImage:nil];
     missedOrMatchedImage.backgroundColor = [UIColor lightGrayColor];
     
 }

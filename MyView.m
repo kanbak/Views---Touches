@@ -8,6 +8,7 @@
 
 #import "MyView.h"
 
+
 @implementation MyView
 @synthesize delegate;
 
@@ -25,7 +26,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         NSLog(@"MyView"); }
-    self.backgroundColor = [UIColor brownColor];
+    self.backgroundColor = [UIColor whiteColor];
     return self;
 }
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
