@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554C739F179B1D590064B9D9 /* matched.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C739D179B1D590064B9D9 /* matched.png */; };
+		554C73A0179B1D590064B9D9 /* missed.png in Resources */ = {isa = PBXBuildFile; fileRef = 554C739E179B1D590064B9D9 /* missed.png */; };
 		55C1EC96179857A9007DF527 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1EC95179857A9007DF527 /* UIKit.framework */; };
 		55C1EC98179857A9007DF527 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1EC97179857A9007DF527 /* Foundation.framework */; };
 		55C1EC9A179857A9007DF527 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C1EC99179857A9007DF527 /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		554C739D179B1D590064B9D9 /* matched.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matched.png; sourceTree = "<group>"; };
+		554C739E179B1D590064B9D9 /* missed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missed.png; sourceTree = "<group>"; };
 		55C1EC92179857A9007DF527 /* Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Views.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C1EC95179857A9007DF527 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55C1EC97179857A9007DF527 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +95,8 @@
 				55C1ECA5179857A9007DF527 /* AppDelegate.m */,
 				55C1ECAD179857A9007DF527 /* ViewController.h */,
 				55C1ECAE179857A9007DF527 /* ViewController.m */,
+				554C739D179B1D590064B9D9 /* matched.png */,
+				554C739E179B1D590064B9D9 /* missed.png */,
 				55C1ECB0179857A9007DF527 /* ViewController.xib */,
 				55C1ECB8179857C3007DF527 /* MyView.h */,
 				55C1ECB9179857C3007DF527 /* MyView.m */,
@@ -170,6 +176,8 @@
 				55C1ECAA179857A9007DF527 /* Default@2x.png in Resources */,
 				55C1ECAC179857A9007DF527 /* Default-568h@2x.png in Resources */,
 				55C1ECB2179857A9007DF527 /* ViewController.xib in Resources */,
+				554C739F179B1D590064B9D9 /* matched.png in Resources */,
+				554C73A0179B1D590064B9D9 /* missed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,7 @@
 				55C1ECB7179857A9007DF527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
