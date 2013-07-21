@@ -8,9 +8,9 @@
 
 #import "MyView.h"
 
-
 @implementation MyView
 @synthesize delegate;
+
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -26,7 +26,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         NSLog(@"MyView"); }
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor =[UIColor whiteColor];
     return self;
 }
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -34,6 +34,9 @@
     NSLog(@"tag = %i", self.tag);
     self.backgroundColor = [UIColor purpleColor];
     [delegate didChooseView:self];
+    
+    
+    
 }
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
